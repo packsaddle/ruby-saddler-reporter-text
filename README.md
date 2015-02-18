@@ -1,5 +1,8 @@
 # Saddler::Reporter::Text
 
+[![Gem Version](http://img.shields.io/gem/v/saddler-reporter-text.svg?style=flat)](http://badge.fury.io/rb/saddler-reporter-text)
+[![Build Status](http://img.shields.io/travis/packsaddle/ruby-saddler-reporter-text/master.svg?style=flat)](https://travis-ci.org/packsaddle/ruby-saddler-reporter-text)
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/saddler/reporter/text`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
