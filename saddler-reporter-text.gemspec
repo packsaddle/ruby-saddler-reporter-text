@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Text reporter for saddler.'
   spec.description   = 'Text reporter for saddler.'
-  spec.homepage      = "https://github.com/packsaddle/ruby-saddler-reporter-text"
+  spec.homepage      = 'https://github.com/packsaddle/ruby-saddler-reporter-text'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
