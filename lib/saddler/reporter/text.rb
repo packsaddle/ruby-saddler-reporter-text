@@ -1,8 +1,7 @@
 module Saddler
   module Reporter
     class Text
-      VERSION = '0.1.0'
-      # Your code goes here...
+      VERSION = '0.0.1'
       def initialize(output)
         @output = output
       end
