@@ -1,4 +1,4 @@
-require "saddler/reporter/text/version"
+require 'saddler/reporter/text/version'
 
 module Saddler
   module Reporter
