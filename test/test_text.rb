@@ -8,6 +8,6 @@ module Saddler
           !::Saddler::Reporter::Text::VERSION.nil?
         end
       end
-  end
+    end
   end
 end
