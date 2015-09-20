@@ -1,0 +1,22 @@
+PATH
+  remote: ../
+  specs:
+    saddler-reporter-text (0.1.1.pre.beta)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    saddler (0.1.1)
+      saddler-reporter-text
+      thor
+    thor (0.19.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  saddler
+  saddler-reporter-text!
+
+BUNDLED WITH
+   1.10.5
