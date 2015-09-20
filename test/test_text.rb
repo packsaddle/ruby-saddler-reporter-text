@@ -36,6 +36,20 @@ module Saddler
           end
         end
       end
+
+      sub_test_case '.report' do
+        output = StringIO.new
+        reporter = Text.new(output)
+        test 'too long' do
+          too_long = File.read('./test/fixtures/too_long.xml')
+          expected = "lib/example/travis_ci.rb:7:120 INFO: Line is too long. [164/120]\n"
+          reporter.report(too_long)
+          output.rewind
+          assert do
+            output.read == expected
+          end
+        end
+      end
     end
   end
 end
