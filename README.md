@@ -22,6 +22,40 @@ $ saddler report \
 like this.
 
 
+## Example
+
+```xml
+$ cat too_long.xml
+<?xml version='1.0'?>
+<checkstyle>
+  <file name='lib/example/travis_ci.rb'>
+    <error column='120' line='7' message='Line is too long. [164/120]' severity='info' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+</checkstyle>
+```
+
+```bash
+$ cat too_long.xml | saddler report --reporter Saddler::Reporter::Text
+lib/example/travis_ci.rb:7:120 INFO: Line is too long. [164/120]
+(exit status -> 0)
+```
+
+```xml
+$ cat no_error.xml
+<?xml version='1.0' encoding='UTF-8'?>
+<checkstyle version='4.3'>
+  <file name='/path/to/example/2015-09-16-react-0.14-eslint-1.4-es5.md'/>
+</checkstyle>
+```
+
+```bash
+$ cat no_error.xml | saddler report --reporter Saddler::Reporter::Text
+(exit status -> 0)
+```
+
+Other [example](./example/example.sh).
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
