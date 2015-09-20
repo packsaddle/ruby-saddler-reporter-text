@@ -10,21 +10,29 @@ module Saddler
       end
 
       sub_test_case '.parse' do
-        too_long = File.read('./test/fixtures/too_long.xml')
         reporter = Text.new(StringIO.new)
-        parsed = [
-          {
-            file: 'lib/example/travis_ci.rb',
-            line: 7,
-            column: 120,
-            severity: 'info',
-            message: 'Line is too long. [164/120]',
-            source: 'com.puppycrawl.tools.checkstyle.Metrics/LineLength'
-          }
-        ]
         test 'too long' do
+          too_long = File.read('./test/fixtures/too_long.xml')
+          parsed = [
+            {
+              file: 'lib/example/travis_ci.rb',
+              line: 7,
+              column: 120,
+              severity: 'info',
+              message: 'Line is too long. [164/120]',
+              source: 'com.puppycrawl.tools.checkstyle.Metrics/LineLength'
+            }
+          ]
           assert do
             reporter.parse_messages(too_long) == parsed
+          end
+        end
+
+        test 'no error' do
+          no_error = File.read('./test/fixtures/no_error.xml')
+          parsed = []
+          assert do
+            reporter.parse_messages(no_error) == parsed
           end
         end
       end
