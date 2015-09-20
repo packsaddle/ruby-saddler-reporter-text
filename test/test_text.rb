@@ -9,7 +9,7 @@ module Saddler
         end
       end
 
-      sub_test_case '.parse' do
+      sub_test_case '.parse_messages' do
         reporter = Text.new(StringIO.new)
         test 'too long' do
           too_long = File.read('./test/fixtures/too_long.xml')
