@@ -49,6 +49,15 @@ module Saddler
             output.read == expected
           end
         end
+
+        test 'no error' do
+          no_error = File.read('./test/fixtures/no_error.xml')
+          reporter.report(no_error)
+          output.rewind
+          assert do
+            output.read == ''
+          end
+        end
       end
     end
   end
