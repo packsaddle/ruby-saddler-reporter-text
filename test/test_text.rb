@@ -43,7 +43,7 @@ module Saddler
         test 'too long' do
           too_long = File.read('./test/fixtures/too_long.xml')
           expected = "lib/example/travis_ci.rb:7:120 INFO: Line is too long. [164/120]\n"
-          reporter.report(too_long)
+          reporter.report(too_long, {})
           output.rewind
           assert do
             output.read == expected
@@ -52,7 +52,7 @@ module Saddler
 
         test 'no error' do
           no_error = File.read('./test/fixtures/no_error.xml')
-          reporter.report(no_error)
+          reporter.report(no_error, {})
           output.rewind
           assert do
             output.read == ''
