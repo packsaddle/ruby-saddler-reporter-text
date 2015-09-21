@@ -6,9 +6,7 @@
 
 ## Reporters
 
-This provides saddler reporters for Text.
-
-* Text
+Text reporter for [saddler](https://github.com/packsaddle/ruby-saddler).
 
 
 ## Usage
