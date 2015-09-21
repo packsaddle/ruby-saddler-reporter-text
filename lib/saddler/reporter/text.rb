@@ -6,7 +6,7 @@ module Saddler
         @output = output
       end
 
-      def report(messages, _options)
+      def report(messages, _options = {})
         parsed_messages = parse_messages(messages)
         parsed_messages.each do |msg|
           severity = msg[:severity] && msg[:severity].upcase
