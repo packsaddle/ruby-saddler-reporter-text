@@ -1,7 +1,7 @@
 PATH
   remote: ../
   specs:
-    saddler-reporter-text (0.1.1.pre.beta)
+    saddler-reporter-text (0.2.1.beta.1)
 
 GEM
   remote: https://rubygems.org/
