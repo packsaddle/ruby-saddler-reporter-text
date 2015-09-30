@@ -1,3 +1,9 @@
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/packsaddle/ruby-saddler-reporter-text/compare/v0.2.0...v0.2.1) (2015-09-30)
+
+* Improve document
+
+
 ## 0.2.0 (2015-09-21)
 
 
