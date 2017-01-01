@@ -4,4 +4,4 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'parse_gemspec-cli'
-gem 'rubocop'
+gem 'rubocop' if RUBY_VERSION >= '2.0.0'
