@@ -1,7 +1,7 @@
 # Saddler::Reporter::Text
 
 [![Gem Version](http://img.shields.io/gem/v/saddler-reporter-text.svg?style=flat)](http://badge.fury.io/rb/saddler-reporter-text)
-[![Build Status](http://img.shields.io/travis/packsaddle/ruby-saddler-reporter-text/master.svg?style=flat)](https://travis-ci.org/packsaddle/ruby-saddler-reporter-text)
+[![Build Status](https://img.shields.io/circleci/build/github/packsaddle/ruby-saddler-reporter-text?style=flat)](https://circleci.com/gh/packsaddle/ruby-saddler-reporter-text)
 
 
 ## Reporters
